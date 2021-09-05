@@ -40,7 +40,7 @@
   background-size: cover;
   text-align: center;
 
-  height: 100vh;
+  height: 90vh;
 }
 .hero{
   position: relative;
@@ -68,23 +68,46 @@
   background-color: rgba(0, 207, 243, 0.473);
 }
 .button{
-  background-color: rgb(197, 147, 154);
-  height: 20px;
-  min-width: fit-content;
-  width: fit-content;
+  background-color: rgb(97, 91, 92);
+  height: 50px;
+  width: 25vw;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 90px;
+  
+
 }
+
 .navbar.active{
   height: fit-content;
 
 }
 .appointment{
   margin: 40px;
+  margin-top: 50px;
+}
+.button:hover{
+  background-color: white;
+  color: black;
 }
 .title{
   font-size: xx-large;
   font-style: italic;
   font-weight: 700;
   color: rgb(207, 131, 131);
+}
+.about{
+  margin-top:20px;
+}
+.about-heading{
+  font-size: larger;
+  text-align: center;
+  
 }
 .hamburger{
   position: relative;
@@ -101,7 +124,14 @@
   
   background-color: whitesmoke;
 }
+@media screen and (max-width: 800px) {
+  .button{
+    width: 80%;
+  }
+  
+}
 @media screen and (max-width: 1000px){
+  
   .list li{
     display: none;
   }
