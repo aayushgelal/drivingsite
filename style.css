@@ -237,24 +237,30 @@ html {
     font-size: large;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .button {
         width: 80%;
     }
     .subscribe {
         width: 100%;
     }
+    .video {
+        height: 30vh;
+        margin: 20px;
+    }
+    .card {
+        height: 20vh;
+    }
     .pricingcards {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .pricingcard {
-        width: 100%;
-        margin-top: 20px;
+        width: 70%;
+        height: 20vh;
+        margin-top: 2vh;
     }
-}
-
-@media screen and (max-width: 1000px) {
     .list li {
         display: none;
     }
